@@ -4,6 +4,7 @@
   "description": "trillo app",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist",
     "dev": "concurrently \"npx node-sass sass/main.scss dist/css/style.css -w\" \"npx live-server dist/ \"",
     "watch:sass": "node-sass sass/main.scss dist/css/style.css -w",
     "devserver": "live-server dist/",
@@ -15,11 +16,15 @@
   },
   "author": "Jonas",
   "license": "ISC",
+  "homepage": "https://hoarfox.github.io/trillo",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
